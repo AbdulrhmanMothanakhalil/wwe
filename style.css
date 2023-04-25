@@ -1,0 +1,1093 @@
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    
+    
+    
+    
+
+}
+
+
+
+.slider{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    
+    
+    
+    
+}
+
+
+
+.slider figure div{
+    float: left;
+    width: 20%;
+    
+}
+
+
+.slider figure img{
+    
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    
+    
+    
+}
+
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    animation: animate 35s infinite;
+    
+    
+}
+
+.content{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-container{
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.btn{
+    border: 1PX solid #3498db;
+    background: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    
+    position: absolute;
+    right:  10px;
+    top: 5px;
+    cursor: pointer;
+    color: aliceblue;
+    transition: 0.7s;
+    overflow: hidden;
+
+
+}
+
+
+.btn:hover{
+    background-color: #3498db;
+
+
+
+}
+
+
+
+
+.logo-container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    align-self: center;
+    
+
+}
+
+.logo-container img{
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    left: 1160px;
+   
+    
+}
+
+
+h2{
+    font-size: 3rem;
+    color: #3498db;
+    position: absolute;
+    top: 150px;
+    left: 1100px;
+    text-align: center;
+   
+    
+}
+
+
+h4{
+    font-size: 2rem;
+    color: #3498db;
+    position: absolute;
+    top: 220px;
+    left: 970px;
+    text-align: center;
+   
+    
+}
+
+
+h6{
+    position: absolute;
+    bottom:-25;
+    left: 5px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.3);
+    text-transform: lowercase;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 5px;
+    left: 1170px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    
+}
+.social-icons a{
+    font-size: 2rem;
+    margin-right: 20px;
+    color: rgb(238, 228, 248);
+    
+    
+}
+
+.social-icons a:hover{
+  color:#3995D2;
+  
+
+}
+
+
+@keyframes animate
+{
+    0%{left: 0%;}
+    10%{left: 0%;}
+    12%{left: -100%;}
+    22%{left: -100%;}
+    24%{left: -200%;}
+    34%{left: -200%;}
+    36%{left: -300%;}
+    46%{left: -300%;}
+    48%{left: -400%;}
+    58%{left: -400%;}
+    60%{left: -300%;}
+    70%{left: -300%;}
+    72%{left: -200%;}
+    82%{left: -200%;}
+    84%{left: -100%;}
+    94%{left: -100%;}
+    96%{left: 0%;}
+    
+
+}
+
+
+
+
+@media (max-width:480px){
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        
+        
+    }
+  
+   .slider{
+   
+    max-height: 100%;
+    
+}
+
+.slider figure div{
+    float: left;
+    width: 20%;
+   
+}
+
+
+.slider figure img{
+    
+    
+    width: auto;
+    height: 100vh;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.slider figure{
+    
+    width: 500%;
+    margin: 0;
+    animation: animate 35s infinite;
+    background-position: center;
+    
+}
+.slid img{
+    background-position: center;
+    background-size: auto;
+}
+
+.clock {
+    
+    position: relative;
+    bottom: 300px;
+    left: 400px;
+}
+
+
+.days{
+    font-size: 3rem;
+    color: aliceblue;
+    position: absolute;
+    left: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 35px 35px;
+
+}
+
+
+
+.hours{
+    font-size: 3rem;
+    color: aliceblue;
+    position: relative;
+    bottom: 100px;
+    left: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 35px 35px;
+
+}
+
+
+.minutes{
+    font-size: 3rem;
+    color: aliceblue;
+    position: fixed;
+    bottom: 160px;
+    left: 140px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 35px 35px;
+
+
+}
+
+
+
+.seconds{
+    font-size: 3rem;
+    color: aliceblue;
+    position: fixed;
+    bottom: 20px;
+    left: 140px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 35px 35px;
+    
+
+
+}
+.p1{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #3498db;
+    position: absolute;
+    
+    bottom: 453px;
+    
+   left: 180px;
+    
+}
+.p2{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #3498db;
+    position: absolute;
+    
+    bottom: 313;
+    
+   left: 178px;
+    
+}
+.p3{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #3498db;
+    position: absolute;
+    
+    bottom: 175px;
+    
+   left: 170px;
+    
+}
+.p4{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #3498db;
+    position: absolute;
+    
+    bottom: 36px;
+    
+   left: 170px;
+    
+}
+
+
+.btn-container{
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.btn{
+    border: 1PX solid #3498db;
+    background: none;
+    padding: 10px 5px;
+    font-size: 10px;
+    
+    position: absolute;
+    right:  5px;
+    top: 5px;
+    cursor: pointer;
+    color: aliceblue;
+    transition: 0.7s;
+    overflow: hidden;
+
+
+}
+
+
+.btn:hover{
+    background-color: #3498db;
+
+
+
+}
+
+
+.logo-container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    align-self: center;
+    overflow: hidden;
+    
+
+}
+
+.logo-container img{
+    width: 140px;
+    height: 50px;
+    position: absolute;
+    top: 60px;
+    left: 150px;
+   
+    
+}
+
+h2{
+    font-size: 2rem;
+    color: #3498db;
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    text-align: center;
+   
+    
+}
+
+
+h4{
+    
+    font-size: 1.1rem;
+    color: #3498db;
+    position: absolute;
+    top: 180px;
+    left: 40px;
+    text-align: center;
+   
+    
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 5px;
+    left: 290px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    
+}
+.social-icons a{
+    font-size: 1rem;
+    margin-right: 10px;
+    color: rgb(238, 228, 248);
+    
+    
+}
+
+.social-icons a:hover{
+  color:#3995D2;
+  
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:390px){
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        
+        
+    }
+  
+   .slider{
+    
+    min-height: 100vh;
+    
+}
+
+.slider figure div{
+    float: left;
+    width: 20%;
+   
+}
+
+
+.slider figure img{
+    
+    
+    width: auto;
+    height: 100vh;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.slider figure{
+    
+    width: 500%;
+    margin: 0;
+    animation: animate 35s infinite;
+    background-position: center;
+    
+}
+.slid img{
+    background-position: center;
+    background-size: auto;
+}
+
+.clock {
+    
+    position: relative;
+    bottom: 300px;
+    left: 400px;
+}
+
+
+.days{
+    font-size: 3rem;
+    color: aliceblue;
+    position: fixed;
+    bottom: 440px;
+    left: 140px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 35px 35px;
+
+}
+
+
+
+.hours{
+    font-size: 3rem;
+    color: aliceblue;
+    position: fixed;
+    bottom: 300px;
+    left: 140px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 35px 35px;
+
+}
+
+
+.minutes{
+    font-size: 3rem;
+    color: aliceblue;
+    position: fixed;
+    bottom: 160px;
+    left: 140px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 35px 35px;
+
+
+}
+
+
+
+.seconds{
+    font-size: 3rem;
+    color: aliceblue;
+    position: fixed;
+    bottom: 20px;
+    left: 140px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 35px 35px;
+    
+
+
+}
+.p1{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #3498db;
+    position: absolute;
+    
+    bottom: 453px;
+    
+   left: 180px;
+    
+}
+.p2{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #3498db;
+    position: absolute;
+    
+    bottom: 313;
+    
+   left: 178px;
+    
+}
+.p3{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #3498db;
+    position: absolute;
+    
+    bottom: 175px;
+    
+   left: 170px;
+    
+}
+.p4{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #3498db;
+    position: absolute;
+    
+    bottom: 36px;
+    
+   left: 170px;
+    
+}
+
+
+.btn-container{
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.btn{
+    border: 1PX solid #3498db;
+    background: none;
+    padding: 10px 5px;
+    font-size: 10px;
+    
+    position: absolute;
+    right:  5px;
+    top: 5px;
+    cursor: pointer;
+    color: aliceblue;
+    transition: 0.7s;
+    overflow: hidden;
+
+
+}
+
+
+.btn:hover{
+    background-color: #3498db;
+
+
+
+}
+
+
+.logo-container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    align-self: center;
+    overflow: hidden;
+    
+
+}
+
+.logo-container img{
+    width: 140px;
+    height: 50px;
+    position: absolute;
+    top: 60px;
+    left: 130px;
+   
+    
+}
+
+h2{
+    font-size: 2rem;
+    color: #3498db;
+    position: absolute;
+    top: 120px;
+    left: 77px;
+    text-align: center;
+   
+    
+}
+
+
+h4{
+    
+    font-size: 1rem;
+    color: #3498db;
+    position: absolute;
+    top: 180px;
+    left: 40px;
+    text-align: center;
+   
+    
+}
+
+
+.social-icons {
+    position: absolute;
+    bottom: 5px;
+    left: 270px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    
+}
+.social-icons a{
+    font-size: 1rem;
+    margin-right: 10px;
+    color: rgb(238, 228, 248);
+    
+    
+}
+
+.social-icons a:hover{
+	color:#3995D2;
+	
+
+}
+
+}
+
+
+
+
+
+
+
+@media (width:375px) and (height:667px){
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        
+    }
+  
+   .slider{
+    overflow: hidden;
+    min-height: 100vh;
+    
+}
+
+.slider figure div{
+    float: left;
+    width: 20%;
+   
+}
+
+
+.slider figure img{
+    
+    
+    width: auto;
+    height: 100vh;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.slider figure{
+    
+    width: 500%;
+    margin: 0;
+    animation: animate 35s infinite;
+    background-position: center;
+    
+}
+.slid img{
+    background-position: center;
+    background-size: auto;
+}
+
+.clock {
+    
+    position: relative;
+    bottom: 300px;
+    left: 400px;
+}
+
+
+.days{
+    font-size: 2rem;
+    color: aliceblue;
+    position: fixed;
+    bottom: 365px;
+    left: 140px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 35px 35px;
+
+}
+
+
+
+.hours{
+    font-size: 2rem;
+    color: aliceblue;
+    position: fixed;
+    bottom: 250px;
+    left: 140px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 35px 35px;
+
+}
+
+
+.minutes{
+    font-size: 2rem;
+    color: aliceblue;
+    position: fixed;
+    bottom: 135px;
+    left: 140px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 35px 35px;
+
+
+}
+
+
+
+.seconds{
+    font-size: 2rem;
+    color: aliceblue;
+    position: fixed;
+    bottom: 20px;
+    left: 140px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 35px 35px;
+    
+
+
+}
+.p1{
+    text-align: center;
+    font-size: 1.1rem;
+    color: #3498db;
+    position: absolute;
+    
+    bottom: 380px;
+    
+   left: 175px;
+    
+}
+.p2{
+    text-align: center;
+    font-size: 1.1rem;
+    color: #3498db;
+    position: absolute;
+    
+    bottom: 265;
+    
+   left: 173px;
+    
+}
+.p3{
+    text-align: center;
+    font-size: 1.1rem;
+    color: #3498db;
+    position: absolute;
+    
+    bottom: 150px;
+    
+   left: 165px;
+    
+}
+.p4{
+    text-align: center;
+    font-size: 1.1rem;
+    color: #3498db;
+    position: absolute;
+    
+    bottom: 36px;
+    
+   left: 163px;
+    
+}
+
+
+.btn-container{
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.btn{
+    border: 1PX solid #3498db;
+    background: none;
+    padding: 8px 5px;
+    font-size: 8px;
+    
+    position: absolute;
+    right:  5px;
+    top: 5px;
+    cursor: pointer;
+    color: aliceblue;
+    transition: 0.7s;
+    overflow: hidden;
+
+
+}
+
+
+.btn:hover{
+    background-color: #3498db;
+
+
+
+}
+
+
+.logo-container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    align-self: center;
+    overflow: hidden;
+    
+
+}
+
+.logo-container img{
+    width: 140px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 130px;
+   
+    
+}
+
+h2{
+    font-size: 2rem;
+    color: #3498db;
+    position: absolute;
+    top: 90px;
+    left: 77px;
+    text-align: center;
+   
+    
+}
+
+
+h4{
+    
+    font-size: 1rem;
+    color: #3498db;
+    position: absolute;
+    top: 140px;
+    left: 40px;
+    text-align: center;
+   
+    
+}
+
+
+.social-icons {
+    position: absolute;
+    bottom: 5px;
+    left: 270px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    
+}
+.social-icons a{
+    font-size: 1rem;
+    margin-right: 10px;
+    color: rgb(238, 228, 248);
+    
+    
+}
+
+.social-icons a:hover{
+	color:#3995D2;
+	
+
+}
+h6{
+    position: absolute;
+    bottom:-19;
+    left: 5px;
+    font-size: 0.6rem;
+    color: rgba(255, 255, 255, 0.3);
+    text-transform: lowercase;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+}
+
+
+
+
+
